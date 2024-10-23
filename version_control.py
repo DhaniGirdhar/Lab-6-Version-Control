@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
         # display encoded password, along with original inputted password
         if option == 2:
-            print(f"The encoded password is {encoded}, and the original password is {password}")
+            # to implement
 
         # quit
         if option == 3:
