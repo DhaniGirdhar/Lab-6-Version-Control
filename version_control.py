@@ -1,3 +1,7 @@
+# Dhani Girdhar
+# COP 3502C
+# Lab 6: Version Control
+
 # function to encode passkey, where each digit is shifted right 3 (3 is added to the value of each digit)
 def encode(passkey):
     encoded_passkey = ""
