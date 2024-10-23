@@ -5,6 +5,14 @@ def encode(passkey):
         encoded_passkey += str((int(digit) + 3) %10)
     return encoded_passkey
 
+# function to decode password, shifts each digit left by 3 places
+def decode(passkey):
+    decoded_passkey = ""
+    for digit in passkey:
+        digit = (int(digit) - 3) % 10
+        decoded_passkey += str(digit)
+    return decoded_passkey
+
 # function to call menu, without taking up space in main
 def menu():
     print("Menu")
@@ -35,7 +43,7 @@ if __name__ == '__main__':
 
         # display encoded password, along with original inputted password
         if option == 2:
-            # to implement
+            print(f"The encoded password is {encoded}, and the original password is {decode(encoded)}.")
 
         # quit
         if option == 3:
